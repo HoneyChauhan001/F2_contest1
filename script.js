@@ -51,11 +51,11 @@ function removeAdmin() {
 
   // console.log(arr);
 
-  const filteredArray = arr.filter((element) => {
+  arr = arr.filter((element) => {
     return element.profession != "admin";
   })
 
-  console.log(filteredArray);
+  console.log(arr);
 }
 
 function concatenateArray() {
