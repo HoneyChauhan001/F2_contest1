@@ -43,13 +43,11 @@ function addData() {
 
 function removeAdmin() {
   //Write your code here, just console.log
-  for(let i=0; i<arr.length; i++){
-    if(arr[i].profession == "admin"){
-      arr.splice(i,1);
-    }
-  }
+  const filteredArray = arr.filter((element) => {
+    return element.profession != "admin";
+  })
 
-  console.log(arr);
+  console.log(filteredArray);
 }
 
 function concatenateArray() {
